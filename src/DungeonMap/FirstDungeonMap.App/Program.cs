@@ -69,19 +69,12 @@ public static class Program
         const int height = 7;
         char[,] map = new char[height, width];
 
-        for (int y = 0; y < width; y++)
+        for (int y = 0; y < height; y++)
         {
-            if (y == 0 || y == width - 1)
+            Console.Write("#");
+            for(int x = 0; x < width; x++)
             {
-                Console.Write("#");
-            }
-            else
-            {
-                Console.Write(".");
-            }
-            for(int x = 0; x < height; x++)
-            {
-                if (x == 0 || x == height - 1)
+                if (x == 0 || x == width - 1 || y == 0 || y == height - 1)
                 {
                     Console.Write("#");
                 }
@@ -92,7 +85,7 @@ public static class Program
             }
             Console.WriteLine();
         }
-        Console.WriteLine();
+
         MapRenderer.Print(map);
     }
 

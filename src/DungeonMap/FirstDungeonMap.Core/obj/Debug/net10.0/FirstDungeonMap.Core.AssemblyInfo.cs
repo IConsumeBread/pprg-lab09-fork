@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("FirstDungeonMap.Core")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+283757a49c6d16dc15f82be2fc4778eef31323a0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d14f54b0bfdd686c228f068eaaba4b2311bc4983")]
 [assembly: System.Reflection.AssemblyProductAttribute("FirstDungeonMap.Core")]
 [assembly: System.Reflection.AssemblyTitleAttribute("FirstDungeonMap.Core")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
