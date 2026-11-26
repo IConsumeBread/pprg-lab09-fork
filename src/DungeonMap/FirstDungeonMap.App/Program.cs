@@ -1,3 +1,10 @@
+using System.ComponentModel.DataAnnotations;
+using System.Dynamic;
+using System.Linq.Expressions;
+using System.Runtime.CompilerServices;
+using System.Runtime.Versioning;
+using System.Security.Cryptography.X509Certificates;
+using System.Security.Principal;
 using FirstDungeonMap.App.UI;
 using FirstDungeonMap.Core.Maps;
 
@@ -42,13 +49,50 @@ public static class Program
         };
 
         // TODO: wyświetl mapę wierszami za pomocą dwóch pętli.
+        for (int y = 0; y < map.GetLength(0); y++)
+        {
+            Console.WriteLine();
+            for (int x = 0; x < map.GetLength(1); x++)
+            {
+                Console.Write($"{map[y, x]}");
+            }
+        }
+        Console.WriteLine();
         Console.WriteLine($"Mapa ma {map.GetLength(0)} wiersze i {map.GetLength(1)} kolumn.");
     }
 
     private static void Task2()
     {
-        char[,] map = new char[7, 12];
         // TODO: wypełnij krawędzie '#', a wnętrze '.'.
+
+        const int width = 12;
+        const int height = 7;
+        char[,] map = new char[height, width];
+
+        for (int y = 0; y < width; y++)
+        {
+            if (y == 0 || y == width - 1)
+            {
+                Console.Write("#");
+            }
+            else
+            {
+                Console.Write(".");
+            }
+            for(int x = 0; x < height; x++)
+            {
+                if (x == 0 || x == height - 1)
+                {
+                    Console.Write("#");
+                }
+                else
+                {
+                    Console.Write(".");
+                }
+            }
+            Console.WriteLine();
+        }
+        Console.WriteLine();
         MapRenderer.Print(map);
     }
 
