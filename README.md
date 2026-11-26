@@ -1,5 +1,7 @@
 # Pierwsza mapa lochu — starter
 
+## `1/7`
+
 Kompilowalna baza dla studentów do laboratorium 09. Solucja zawiera aplikację konsolową i bibliotekę logiki mapy. Miejsca wymagające implementacji oznaczono komentarzem `TODO`.
 
 ```text
